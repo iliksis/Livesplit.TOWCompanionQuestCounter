@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<ProjectGuid>{10978A40-68C3-455D-BE86-22DE265558F3}</ProjectGuid>
+	<RootNamespace>LiveSplit</RootNamespace>
+	<AssemblyName>LiveSplit.TOWCompanionQuestCounter</AssemblyName>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<PackageReference Include="System.Drawing.Common" Version="5.0.0" />
+	<PackageReference Include="System.Windows.Forms" Version="4.0.0.0" />
+	<Reference Include="CustomFontDialog">
+	  <HintPath>C:\Program Files\LiveSplit\CustomFontDialog.dll</HintPath>
+	</Reference>
+	<Reference Include="LiveSplit.Core">
+	  <HintPath>C:\Program Files\Livesplit\Livesplit.core.dll</HintPath>
+	</Reference>
+	<Reference Include="UpdateManager">
+	  <HintPath>C:\Program Files\LiveSplit\UpdateManager.dll</HintPath>
+	</Reference>
+	<Reference Include="WinFormsColor">
+	  <HintPath>C:\Program Files\LiveSplit\WinFormsColor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+
+</Project>
