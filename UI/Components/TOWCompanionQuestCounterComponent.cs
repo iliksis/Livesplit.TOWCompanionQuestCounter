@@ -38,12 +38,12 @@ namespace LiveSplit.UI.Components
 			var assembly = Assembly.GetExecutingAssembly();
 			return new List<InfoIconTextComponent>
 			{
-				new InfoIconTextComponent("ellie", "0/5"),
-				new InfoIconTextComponent("sam", "0/1"),
-				new InfoIconTextComponent("max", "0/10"),
-				new InfoIconTextComponent("nyoka", "0/1"),
-				new InfoIconTextComponent("felix", "0/6"),
-				new InfoIconTextComponent("parvati", "0/6")
+				new InfoIconTextComponent("ellie", "X"),
+				new InfoIconTextComponent("sam", "X"),
+				new InfoIconTextComponent("max", "X"),
+				new InfoIconTextComponent("nyoka", "X"),
+				new InfoIconTextComponent("felix", "X"),
+				new InfoIconTextComponent("parvati", "X")
 			};
 		}
 
@@ -185,15 +185,7 @@ namespace LiveSplit.UI.Components
 																					.First(component => component.InformationName == companion.ToString().ToLower());
 										if (!Quests[i].Pointers[x].Comparisons[z].CompletionStates.Contains(completionState))
 										{
-											string currentValue = companionComponent.InformationValue;
-											if (currentValue.Equals(checkMark))
-											{
-												companionComponent.InformationValue = $"{completionState}/{Quests[i].Pointers[x].Comparisons[z].CompletionStates.Max()}";
-											}
-											else
-											{
-												companionComponent.InformationValue = $"{completionState}/{Quests[i].Pointers[x].Comparisons[z].CompletionStates.Max()}";
-											}
+											companionComponent.InformationValue = $"X";
 
 											Quests[i].Pointers[x].Comparisons[z].Completed = false;
 										}
